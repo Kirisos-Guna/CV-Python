@@ -14,7 +14,11 @@ matches = Brute_force.match(des1, des2)
 
 matches = sorted(matches, key=lambda x: x.distance)
 
+<<<<<<< HEAD
 result = cv2.drawMatches(img1, kp1, img2, kp2, matches[:30],None, flages=0)
+=======
+result = cv2.drawMatches(img1, kp1, img2, kp2, matches[:30],None, flags=0)
+>>>>>>> 0dbc42a8e28b7f94939f3a08c63698f245270637
 plt.imshow(cv2.cvtColor(result,cv2.COLOR_BGR2GRAY))
 plt.axis("off")
 plt.show()
